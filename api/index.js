@@ -22,6 +22,7 @@ function cacheSet(q, data) {
   }
   _cache.set(q, { data, ts: Date.now() });
 }
+module.exports = async (req, res) => {
 
 // ── Fetch ─────────────────────────────────────────────────────────────────────
 function fetchJSON(url, ms = 12000) {
